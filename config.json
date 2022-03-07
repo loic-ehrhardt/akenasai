@@ -1,0 +1,38 @@
+[
+    {
+        "type": "title",
+        "title": "Server"
+    },
+    {
+        "type": "string",
+        "title": "IP address",
+        "desc": "Set the IP address",
+        "section": "Raspberry address",
+        "key": "ip"
+    },
+    {
+        "type": "numeric",
+        "title": "Port",
+        "desc": "Set the port number",
+        "section": "Raspberry address",
+        "key": "port"
+    },
+    {
+        "type": "title",
+        "title": "Wifi"
+    },
+    {
+        "type": "string",
+        "title": "SSID tip",
+        "desc": "String to be contained in the target SSID",
+        "section": "Wifi",
+        "key": "ssid"
+    },
+    {
+        "type": "numeric",
+        "title": "Wifi connectivity check interval",
+        "desc": "Time in seconds between two connectivity checks",
+        "section": "Wifi",
+        "key": "update_interval"
+    }
+]
