@@ -67,11 +67,11 @@ class WifiButton(Button):
    def set_activation(self,active):
       self.active = active
       if active:
-         self.idicon.source = './wifi_on.png'
+         self.idicon.source = './data/wifi_on.png'
          self.idtxt.text = u'[b]Wifi activé[/b]'
          self.idtxt.color = (1,1,1)
       else:
-         self.idicon.source = './wifi_off.png'
+         self.idicon.source = './data/wifi_off.png'
          self.idtxt.text = u'[b]Wifi désactivé[/b]'
          self.idtxt.color = (0.451,0.451,0.451)
 
@@ -92,10 +92,10 @@ class ActButton(Button):
    def set_activation(self,active):
       self.active = active
       if active:
-         self.idicon.source = './action_on.png'
+         self.idicon.source = './data/action_on.png'
          self.idtxt.color = (1,1,1)
       else:
-         self.idicon.source = './action_off.png'
+         self.idicon.source = './data/action_off.png'
          self.idtxt.color = (0.451,0.451,0.451)
       self.idtxt.texture_update()
 
