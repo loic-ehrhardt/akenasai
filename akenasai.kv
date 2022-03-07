@@ -1,0 +1,69 @@
+
+FloatLayout:
+
+   GradientBoxLayout:
+      col1: 0 , 16 ,  72 , 255
+      col2: 0 , 36 , 164 , 255
+      orientation: 'vertical'
+      padding: '30dp'
+      spacing: '30dp'
+      wifibutton: wifibutton
+      actbutton: actbutton
+
+      WifiButton:
+         id: wifibutton
+         idicon: wicon
+         idtxt: wtxt
+
+         Image:
+            id: wicon
+            pos: self.parent.pos[0]+self.parent.size[0]*0.15 , self.parent.pos[1]+self.parent.size[1]*0.2
+            size: self.parent.size[0]*0.7 , self.parent.size[1]*0.7
+            allow_stretch: True
+            source: './wifi_off.png'
+
+         AnchorLayout:
+            pos: self.parent.pos
+            size: self.parent.size
+            anchor_x: 'center'
+            anchor_y: 'bottom'
+
+            Label:
+               id: wtxt
+               pos_hint: 0.0 , 0.0
+               size_hint: 1.0 , 0.2
+               font_size: '14sp'
+               color: 0.451 , 0.451 , 0.451
+               markup: True
+               text: u'[b]Wifi d\xe9sactiv\xe9[/b]'
+
+      ActButton:
+         id: actbutton
+         idicon: aicon
+         idtxt: atxt
+
+         Image:
+            id: aicon
+            pos: self.parent.pos[0]+self.parent.size[0]*0.15 , self.parent.pos[1]+self.parent.size[1]*0.2
+            size: self.parent.size[0]*0.7 , self.parent.size[1]*0.7
+            allow_stretch: True
+            source: './action_off.png'
+
+         AnchorLayout:
+            pos: self.parent.pos
+            size: self.parent.size
+            anchor_x: 'center'
+            anchor_y: 'bottom'
+
+            Label:
+               id: atxt
+               pos_hint: 0.0 , 0.0
+               size_hint: 1.0 , 0.2
+               font_size: '14sp'
+               color: 0.451 , 0.451 , 0.451
+               markup: True
+               text: u'[b]Actionner[/b]'
+
+
+
+
